@@ -40,6 +40,12 @@ transition(s2, rescue(alice, bob), s2).
 
 transition(s2, observe(drone), s2).
 
+transition(s0, wait(alice), s0).
+
+transition(s1, wait(alice), s1).
+
+transition(s2, wait(alice), s2).
+
 
 % =====================================================
 % Capabilities
@@ -54,7 +60,5 @@ can(bob, rescue).
 can(drone, observe).
 can(drone, move).
 
-transition(s0, wait(alice), s0).
-transition(s1, wait(alice), s1).
-transition(s2, wait(alice), s2).
+
 
